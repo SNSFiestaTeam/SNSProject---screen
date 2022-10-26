@@ -113,7 +113,7 @@ main{
 }
 
 .email-input-area{
-    width: 95%;
+    width: 85%;
     margin: 0 0 2% 0;
     padding: 3.5% 4%;
     background-color: #FAFAFA;
@@ -124,6 +124,12 @@ main{
     align-items: center;
 }
 
+.email-input-area:focus-within{
+    border: 1px solid var(--fiesta-color);
+}
+
+
+
 #loginEmail{
     width: 100%;
     background-color: #FAFAFA;
@@ -132,7 +138,7 @@ main{
 } 
 
 .login-button{
-    width: 95%;
+    width: 85%;
     height: 36px;
     background-color: var(--fiesta-color);
     border-radius: 5px;
