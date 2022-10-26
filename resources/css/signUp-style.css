@@ -60,9 +60,17 @@ main{
     margin: 0 0 10%;
 }
 
-#logo {
-    width: 70%;
-}
+
+.logo-area a {
+    font-family: "Cookie", cursive;
+    /* font-family: 'Chewy', cursive; */
+    color: #dd4132;
+    font-size: 60px;
+    width: 120px;
+    height: auto;
+  }
+
+
 
 #logo-sentence {
     font-size: 0.9em;

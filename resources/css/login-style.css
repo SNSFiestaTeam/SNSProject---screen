@@ -68,12 +68,18 @@ main{
 
 .logo-area{
     text-align: center;
+    margin-bottom: 15px;
 }
 
-#logo {
-    width: 70%;
-    margin: 0 0 5% 0;
-}
+.logo-area a {
+    font-family: "Cookie", cursive;
+    /* font-family: 'Chewy', cursive; */
+    color: #dd4132;
+    font-size: 60px;
+    width: 120px;
+    height: auto;
+  }
+
 
 
 .login-area > input{
