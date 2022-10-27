@@ -91,12 +91,14 @@ main{
     font-size: 0.8em;
 } 
 
-/* .login-area{
+
+/* 트랜지션 효과 */
+.login-area{
     position: relative;
-} */
+}
 
 
-/* .login-area > label{
+.login-area > label{
     position: absolute;
     top: 10px;
     left: 10px;
@@ -111,7 +113,9 @@ main{
     padding: 0;
     font-size: 0.5em;
     color: var(--main-font-color);
-} */
+}
+
+
 
 
 .login-area > input:focus {

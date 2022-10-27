@@ -72,12 +72,11 @@ main{
 
 
 
-#logo-sentence {
+.logo-sentence {
     font-size: 0.9em;
 }
 
-
-#signUp-frm{
+.signUp-frm{
     display: flex;
     flex-direction: column;
     justify-content: center;
