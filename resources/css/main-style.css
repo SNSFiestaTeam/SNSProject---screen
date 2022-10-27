@@ -186,16 +186,14 @@ main > section {
 }
 
 #feed-content {
-  height: 20px;
   margin-top: 10px;
 
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
-  line-height: 1.2;
+  line-height: 1.6;
   text-align: left;
   word-wrap: break-word;
   display: -webkit-box;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 
