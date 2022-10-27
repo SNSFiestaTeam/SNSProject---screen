@@ -44,7 +44,10 @@
 
           <form action="#" method="post" class="signUp-frm">
             <div class="signUp-area"> <!-- 이메일 -->
-              <input type="text" name="memberEmail" id="memberEmail" value="" placeholder="이메일 주소" required>
+              <input type="text" name="memberEmail" id="memberEmail" value="" required>
+              <!-- placeholder="이메일 주소"  -->
+              <label for="memberEmail">이메일</label>
+
               
               <!-- 중복검사 + 형태 맞는지 확인하는 아이콘 : 체크, X -->
               <span class="icon-id-check">
@@ -55,19 +58,22 @@
   
 
             <div class="signUp-area"> <!-- 성명 -->
-              <input type="text" name="memberName" id="memberName" value="" placeholder="성명" required>
+              <input type="text" name="memberName" id="memberName" value="" required>
+              <!-- placeholder="성명"  -->
+              <label for="memberName">성명</label>
              
               <!-- 검사 안함 : 필수작성 확인 /체크-->
               <span class="icon-name-check">
                 <i class="fa-regular fa-circle-check" id="i-check"></i>
                 <!-- <i class="fa-regular fa-circle-xmark" id="i-x"></i> -->
               </span>
-
             </div>
   
 
             <div class="signUp-area"> <!-- 사용자 이름 -->
-              <input type="text" name="memberNickname" id="memberNickname" value="" placeholder="사용자 이름" required>
+              <input type="text" name="memberNickname" id="memberNickname" value="" required>
+              <!-- placeholder="사용자 이름"  -->
+              <label for="memberNickname">사용자 이름</label>
               
               <!-- 자동생성 / 중복검사 : 새로고침 / 체크 / X-->
               <span class="icon-nickname-refresh">
@@ -80,7 +86,9 @@
             </div>
   
             <div class="signUp-area"> <!-- 비밀번호 -->
-              <input type="password" name="memberPw" id="memberPw" value="" placeholder="비밀번호" required>
+              <input type="password" name="memberPw" id="memberPw" value="" required>
+              <!-- placeholder="비밀번호"  -->
+              <label for="memberPw">비밀번호</label>
               
               <!-- 비밀번호 보이기숨기기 -->
               <!-- 비밀번호에 특별한 조건 넣을지 물어보기 -->
@@ -92,7 +100,9 @@
               
 
             <div class="signUp-area"> <!-- 비밀번호 확인 -->
-              <input type="password" name="memberPwConfirm" id="memberPwConfirm" value="" placeholder="비밀번호 확인" required>
+              <input type="password" name="memberPwConfirm" id="memberPwConfirm" value="" required>
+              <!-- placeholder="비밀번호 확인"  -->
+              <label for="memberPwConfirm">비밀번호 확인</label>
               
               <!-- 비밀번호 일치 확인 : 체크 / X -->
               <span class=icon-pwConfirm-check>

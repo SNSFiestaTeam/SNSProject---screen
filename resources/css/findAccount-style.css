@@ -114,8 +114,9 @@ main{
 
 .email-input-area{
     width: 85%;
+    height: 45px;
     margin: 0 0 2% 0;
-    padding: 3.5% 4%;
+    padding: 3.5% 4% 1%;
     background-color: #FAFAFA;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -124,9 +125,48 @@ main{
     align-items: center;
 }
 
+
+
+
+/* 트랜지션 적용 */
+.email-input-area{
+    position: relative;
+}
+
+
+.email-input-area > label{
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    padding: 0 0 2%;
+    font-size: 0.8em;
+    color: #b4b4b4;
+    transition: 0.3s;
+}
+
+.email-input-area input:focus ~ label{
+    position: absolute;
+    transform: translate(1px, -8px);
+    font-size: 0.5em;
+    color: var(--fiesta-color);
+    transition-timing-function: ease-in-out;
+}
+
+
+.email-input-area input:valid ~ label{
+    position: absolute;
+    transform: translate(1px, -8px);
+    padding: 0;
+    font-size: 0.5em;
+}
+
+
 .email-input-area:focus-within{
     border: 1px solid var(--fiesta-color);
 }
+
+
 
 
 
