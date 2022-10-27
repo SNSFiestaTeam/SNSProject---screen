@@ -30,7 +30,7 @@ main{
 /* 영역 크기 구분 */
 /* 전체 */
 .findAccount-section{
-    width: 400px;
+    width: 360px;
     height: 550px;
 
     background-color: #ffffff;
@@ -151,7 +151,7 @@ main{
 
 /* 비밀번호를 재설정할 수 없나요? */
 .notFoundAccount a{
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: var(--main-font-color);
     margin: 10% 0;
 
@@ -204,7 +204,7 @@ main{
 
 /* 로그인으로 */
 .toLogin{
-    width: 400px;
+    width: 360px;
     height: 57px;
 
     margin: 3% 0;

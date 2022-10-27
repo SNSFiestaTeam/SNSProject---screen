@@ -11,7 +11,8 @@
 }
 
 body {
-  height: auto;
+  width: 100vw;
+  height: 100vh;
 }
 
 button {
@@ -19,6 +20,7 @@ button {
 }
 
 main {
+  width: 100%;
 }
 
 main > section {
@@ -184,16 +186,14 @@ main > section {
 }
 
 #feed-content {
-  height: 20px;
   margin-top: 10px;
 
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
-  line-height: 1.2;
+  line-height: 1.6;
   text-align: left;
   word-wrap: break-word;
   display: -webkit-box;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 
@@ -459,12 +459,11 @@ a#comment-profile {
 
   .hover-btn {
     margin-left: 10px;
-    color: #8e8e8e;
-    display: none;
+    color: white;
   }
 
   .create-reply:hover > .hover-btn {
-    display: inline;
+    color: #8e8e8e;
   }
 
   .more-reply {
@@ -521,10 +520,21 @@ a#comment-profile {
   }
 
   .feed-section {
-    margin-top: 60px;
+    margin-top: 0;
   }
 
   #feed {
     border: none;
+  }
+
+  .feed-main-content {
+    width: 100%;
+  }
+
+  .image-list li {
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+    object-fit: cover;
   }
 }

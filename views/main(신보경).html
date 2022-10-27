@@ -136,7 +136,7 @@
                   <a href="#" id="dmBtn"><i class="fa-regular fa-paper-plane"></i></a>
                 </div>
                 <div>
-                  <a href="#" id="bookmarkBtn"><i class="fa-regular fa-bookmark"></i></a>
+                  <a href="#bookmarkBtn" id="bookmarkBtn"><i class="fa-regular fa-bookmark"></i></a>
                 </div>
               </div>
 
@@ -152,10 +152,8 @@
                   <div class="hashtag">
                     <a href="#">#aespa</a><a href="#">#에스파</a><a href="#">#KARINA</a><a href="#">#카리나</a>
                   </div>
-                  <button type="button">
-                    <span>...</span>
+                  <button type="button" id="moreBtn">
                     <span id="btn-more"> 더 보기</span>
-
                   </button>
                 </div>
   
@@ -181,7 +179,7 @@
                                 <span class="comment-content">이 언니 넘모 이뿌당</span>
                               </div>
                               <div>
-                                <a href="#" ><i class="fa-regular fa-heart like-heart"></i></a>
+                                <a href="#" class="comment-like-btn" ><i class="fa-regular fa-heart"></i></a>
                               </div>
                             </div>
                             <div class="create-reply">
@@ -213,7 +211,7 @@
                                 <span class="comment-content">사랑해</span>
                               </div>
                               <div>
-                                <a href="#" ><i class="fa-regular fa-heart like-heart"></i></a>
+                                <a href="#" class="comment-like-btn" ><i class="fa-regular fa-heart"></i></a>
                               </div>
                             </div>
                             <div class="create-reply">
@@ -246,7 +244,7 @@
                                     <span class="comment-content">나두 사랑해</span>
                                   </div>
                                   <div>
-                                    <a href="#" ><i class="fa-regular fa-heart like-heart"></i></a>
+                                    <a href="#" class="comment-like-btn"><i class="fa-regular fa-heart"></i></a>
                                   </div>
                                 </div>
                                 <div class="create-reply">
@@ -279,7 +277,7 @@
                                 <span class="comment-content">레전드</span>
                               </div>
                               <div>
-                                <a href="#" ><i class="fa-regular fa-heart like-heart"></i></a>
+                                <a href="#"  class="comment-like-btn"><i class="fa-regular fa-heart"></i></a>
                               </div>
                             </div>
                             <div class="create-reply">
@@ -302,8 +300,8 @@
                 </div>
               </div>
               <div id="comment-input-area">
-                <form action="#">
-                  <input type="text" placeholder="댓글 달기..." />
+                <form name="commentForm" action="#">
+                  <input name="comment" id="commentInput" type="text" placeholder="댓글 달기..." autocomplete="off"/>
                   <button disabled>게시</button>
                 </form>
               </div>
