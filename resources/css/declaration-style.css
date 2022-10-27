@@ -11,7 +11,7 @@ body {
   height: 100vh;
 }
 
-.feed-menu-container {
+.declaration-container {
   width: 100vw;
   height: 100vh;
   background-color: #00000070;
@@ -26,8 +26,8 @@ body {
 }
 
 .feed-menu {
-  width: 200px;
-  height: 150px;
+  width: 500px;
+  height: 350px;
   background-color: white;
 
   border-radius: 7px;
@@ -37,40 +37,38 @@ body {
   align-items: center;
 }
 
-.feed-menu-btn .btn1 {
+.declaration-content {
+  width: 50%;
+  flex-basis: 70%;
+  border-bottom: 1px solid #ddd;
+}
+
+.feed-menu-btn {
   width: 100%;
 
-  flex-basis: 10%;
+  flex-basis: 15%;
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.feed-menu-btn .btn2{
-  flex-basis: 10%;
+.feed-menu-btn > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: black;
+  font-size: 14px;
 }
 
-.btn2 > input{
-width: 50%;
+.btn1 > span {
+  color: orangered;
+  font-weight: bold;
 }
-  
-
-
-
 
 .btn1 > a,
 .btn2 > a {
   border-bottom: 1px solid #ddd;
-}
-
-.feed-menu-btn .btn1 > a{
-  display: inline;
-
-}
-
-.feed-menu-btn.btn3 span{
- display: inline;
- text-align: left;
- 
 }

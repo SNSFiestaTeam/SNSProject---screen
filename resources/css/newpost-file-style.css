@@ -1,49 +1,98 @@
-.modal_background{
-    position: fixed;
-    top:0; left:0; bottom:0; right:0;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-  
-  }
-  #close-post{
-    position: fixed;
-    top:0; left:100; bottom:100; right:0;
-    z-index: 10000;
-    margin: 20px;
-    background-color:transparent;
-    transform:scale(2) ;
+:root {
+  --background-color: white;
+  --main-font-color: #8e8e8e;
+  --icon-button-color: #262626;
+  --point-font-color: #0095f6;
+  --mention-font-color: #00376b;
+  --fiesta-color: #dd4132;
+  --small-font-size: 12px;
+  --madium-font-size: 16px;
+  --large-icon-size: 24px;
 }
 
-/* #post-x, #post-x > i{ background-color: black; } */
+
+.modal_background{
+  position: fixed;
+  top:0; left:0; bottom:0; right:0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  z-index: 10;
+
+}
+#close-post{
+  position: fixed;
+  top:0; left:100; bottom:100; right:0;
+  z-index: 10000;
+  margin: 20px;
+  background-color:transparent;
+  transform:scale(2) ;
+  cursor: pointer;
+  color: white;
+}
+/* ************** 게시물 작성 창 ******************* */
+
+.modal_post_section{
+
+  position: relative;
+  width: 50vw;
+}
+
+.modal_post_section::before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.new-post-background{
+  position: absolute;
+  top:0; left:0; bottom:0; right:0;
+  /* width: 50vw;
+  height: 50vh;*/
+  min-width: 325px;
+  min-height: 431px;
+  max-width: 900px;
+  max-height: 940px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  background-color: white;
+  box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
+
+}
 
 
-  .postwirte-box{
-    width: 388px;
-    height: 431px;
-    background-color: white;
-    border-radius: 10px;
-  }
+/* ----- 게시물작성 top ------ */
 
+.new-post-top-section{
+  width: 100%;
+  height: 7%;
+}
+.new-post-top{
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-bottom: 2px solid #ccc;
+
+}
+.new-post-top-title{
+  /* flex-grow: 1; */
+  justify-content: center;
   
-  .create-title{ 
-    /* text-align: center; */
-    /* padding: 10px 0; */
-    /* height: 7%; */
-    /* width: 228px; */
-    /* height: 24px; */
-    /* padding-top: 13px; */
-    /* border-bottom: 2px solid #ddd; */
-    
-    text-align: center;
-  
-  padding-top: 9px;
-  height: 10%;
-  border-bottom: 2px solid #ddd;
-  }
+  font-size: 20px;
+}
+
+.new-post-bottom-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 93%;
+}
 
   .inputpotos-box{
     /* background-color: blueviolet; */
