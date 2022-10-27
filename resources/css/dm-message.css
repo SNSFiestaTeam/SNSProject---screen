@@ -26,51 +26,56 @@ body {
 }
 
 .feed-menu {
-  width: 200px;
-  height: 150px;
+  width: 450px;
+  height: 480px;
   background-color: white;
 
   border-radius: 7px;
   display: flex;
   flex-direction: column;
 
-  align-items: center;
 }
 
-.feed-menu-btn .btn1 {
-  width: 100%;
-
+.btn1 {
+  width: 100%; 
   flex-basis: 10%;
-
+ 
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.feed-menu-btn .btn2{
-  flex-basis: 10%;
-}
-
-.btn2 > input{
-width: 50%;
-}
-  
-
-
-
-
-.btn1 > a,
-.btn2 > a {
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
   border-bottom: 1px solid #ddd;
 }
 
-.feed-menu-btn .btn1 > a{
-  display: inline;
-
+.btn1 > .message{
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.feed-menu-btn.btn3 span{
- display: inline;
- text-align: left;
- 
+.btn1 > .next > a{
+  font-size: 16px;
+  font-weight: bold;
+  color: blue;
+}
+
+.btn2{
+  width: 100%;
+  flex-basis: 10%;
+  padding: 15px 20px 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+input.search{
+  margin-top: 10px;
+  width: 70%;
+  height: 70%;
+  border: none;
+  outline: none;
+}
+
+.btn3{
+  padding: 20px;
+  font-size: 14px;
+  font-weight: bold;
 }
