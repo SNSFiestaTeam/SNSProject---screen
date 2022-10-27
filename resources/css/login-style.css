@@ -80,6 +80,8 @@ main{
   }
 
 
+
+  /* 로그인 정보 입력 */
 .login-area :first-child {
     margin: 0 0 7px 0;
 }
