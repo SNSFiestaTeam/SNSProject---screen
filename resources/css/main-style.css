@@ -533,4 +533,11 @@ a#comment-profile {
   .feed-main-content {
     width: 100%;
   }
+
+  .image-list li {
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
 }
