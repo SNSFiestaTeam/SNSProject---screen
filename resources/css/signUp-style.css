@@ -106,10 +106,18 @@ main{
 
 .signUp-area i {
     color: lightgray;
+    right: 10px;
+    position: absolute;
 }
 
 .icon-nickname-refresh{
-    padding: 0 5px;
+    right: 25px;
+    position: absolute;
+}
+
+.icon-pw-showHide{
+    right: -2px;
+    position: absolute;
 }
 
 
