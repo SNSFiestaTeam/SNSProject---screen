@@ -1,3 +1,8 @@
+body {
+    width: 100vw;
+    height: 100vh;
+  }
+
 
 .container{
     width: 1200px;
@@ -82,5 +87,11 @@
     cursor: pointer;
     outline: none;
     border-radius: 5px;
+
+}
+
+@media screen and (max-width: 470px) {
+
+
 
 }

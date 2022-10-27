@@ -37,32 +37,40 @@ body {
   align-items: center;
 }
 
-.feed-menu-btn {
+.feed-menu-btn .btn1 {
   width: 100%;
 
-  flex-basis: 33%;
+  flex-basis: 10%;
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.feed-menu-btn > a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  color: black;
-  font-size: 14px;
+.feed-menu-btn .btn2{
+  flex-basis: 10%;
 }
 
-.btn1 > a {
-  color: red;
-  font-weight: bold;
+.btn2 > input{
+width: 50%;
 }
+  
+
+
+
 
 .btn1 > a,
 .btn2 > a {
   border-bottom: 1px solid #ddd;
+}
+
+.feed-menu-btn .btn1 > a{
+  display: inline;
+
+}
+
+.feed-menu-btn.btn3 span{
+ display: inline;
+ text-align: left;
+ 
 }
