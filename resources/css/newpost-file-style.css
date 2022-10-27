@@ -14,19 +14,19 @@
 .modal_background{
   position: fixed;
   top:0; left:0; bottom:0; right:0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color:rgba(0,0,0,0.5);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  z-index: 10;
+  justify-content:center;
+  align-items:center;
+  /* display:none; */
+  padding:15px;
+  z-index: 5;
 
 }
 #close-post{
   position: fixed;
   top:0; left:100; bottom:100; right:0;
-  z-index: 10000;
+  z-index: 6;
   margin: 20px;
   background-color:transparent;
   transform:scale(2) ;
@@ -37,24 +37,33 @@
 
 .modal_post_section{
 
-  position: relative;
-  width: 50vw;
+   position: relative;
+  /*width: 50vw; */
+  display: flex;
+  justify-content:center;
+  align-items:center;
+
+  width:60vw;
+  min-width: 388px;
+  min-height: 431px;
+  max-width: 795px;
+  max-height: 838px;
+
+  border-radius:10px;
+  overflow:auto;
+
+  box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
 }
 
 .modal_post_section::before{
   content: "";
   display: block;
-  padding-top: 100%;
+  padding-top: 110%;
 }
 .new-post-background{
   position: absolute;
   top:0; left:0; bottom:0; right:0;
-  /* width: 50vw;
-  height: 50vh;*/
-  min-width: 325px;
-  min-height: 431px;
-  max-width: 900px;
-  max-height: 940px;
+
   border-radius: 10px;
   overflow: hidden;
 
@@ -68,7 +77,7 @@
 
 .new-post-top-section{
   width: 100%;
-  height: 7%;
+  height: 8%;
 }
 .new-post-top{
   display: flex;
@@ -76,64 +85,62 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #ececec;
 
 }
 .new-post-top-title{
   /* flex-grow: 1; */
   justify-content: center;
   
-  font-size: 20px;
+  font-size: 18px;
 }
-
+/* ----- 게시물작성 bottom ------ */
 .new-post-bottom-section{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 93%;
+  height: 92%;
 }
 
-  .inputpotos-box{
-    /* background-color: blueviolet; */
+  .new-post-file-input-box{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
-    padding: 20px;
-    /* height: 93%; */
-    top:0; left:0; bottom:0; right:0;
+    /* top:0; left:0; bottom:0; right:0; */
     
   }
-  .inputpotos-box i{
-    transform:scale(4) ;
-    margin-top: 100px;
-    margin-bottom: 30px;
+  .new-post-file-img > i{
+    /* transform:scale(4) ; */
+    /* margin-bottom: 30px; */
   }
-  #create-text-message{
+.input-message{
     font-size: 23px;
     text-align: center;
     font-weight: 300;
-    margin: 5px;
+    margin: 10px 0;
   
   
   }
-  #upload-file{display: none;}
-
+  #file-input{display: none;}
+.file-select-btn > label{
+  cursor: pointer;
+}
   .file-select-btn{
     width: 122.81px;
     height: 30.98px;
     padding: 5px;
     cursor: pointer;
     border-radius: 4px;
-    background-color: #0095F6;
+    background-color: var(--fiesta-color);
     margin-top: 12px ;
 
+    
     color: white;
     font-size: 15px;    
     text-align: center;
-    
-    /* margin-top: 30px; */
-    /* padding: px; */
   }
