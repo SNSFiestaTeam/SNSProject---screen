@@ -79,7 +79,7 @@ function commentLikeBtnClicked() {
 //   -webkit-line-clamp: 1;
 //   -webkit-box-orient: vertical;
 // }
-
+// 더보기 버튼 (미완)
 function moreBtnClicked() {
   moreBtn.style.display = "none";
 }
