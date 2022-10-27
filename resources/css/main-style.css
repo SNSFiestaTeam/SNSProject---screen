@@ -11,7 +11,8 @@
 }
 
 body {
-  height: auto;
+  width: 100vw;
+  height: 100vh;
 }
 
 button {
@@ -526,5 +527,9 @@ a#comment-profile {
 
   #feed {
     border: none;
+  }
+
+  .feed-main-content {
+    width: 100%;
   }
 }
