@@ -112,6 +112,7 @@ main{
 
 }
 
+/* 이메일 입력 */
 .email-input-area{
     width: 85%;
     height: 45px;
@@ -125,6 +126,13 @@ main{
     align-items: center;
 }
 
+
+.email-input-area input{
+    width: 100%;
+    background-color: #FAFAFA;
+    border: none;
+    outline: none;
+}
 
 
 
