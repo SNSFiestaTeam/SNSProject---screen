@@ -20,6 +20,7 @@ button {
 }
 
 main {
+  width: 100%;
 }
 
 main > section {
@@ -522,7 +523,7 @@ a#comment-profile {
   }
 
   .feed-section {
-    margin-top: 60px;
+    margin-top: 0;
   }
 
   #feed {
