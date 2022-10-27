@@ -461,12 +461,11 @@ a#comment-profile {
 
   .hover-btn {
     margin-left: 10px;
-    color: #8e8e8e;
-    display: none;
+    color: white;
   }
 
   .create-reply:hover > .hover-btn {
-    display: inline;
+    color: #8e8e8e;
   }
 
   .more-reply {
