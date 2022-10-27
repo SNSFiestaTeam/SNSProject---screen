@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>로그인</title>
-    <link rel="stylesheet" href="/resources/css/common-style.css" />
-    <link rel="stylesheet" href="/resources/css/login-style.css" />
+    <link rel="stylesheet" href="../../resources/css/common-style.css" />
+    <link rel="stylesheet" href="../../resources/css/login-style.css" />
     <script
       src="https://kit.fontawesome.com/591746f9e8.js"
       crossorigin="anonymous"
     ></script>
   </head>
 
-
   <body>
-
     <!-- 메인 섹션 -->
     <main>
       <!-- viewpoint.svg파일 -->
@@ -32,32 +30,51 @@
       <section class="login-section">
         <!-- 로고 -->
         <div class="logo-area">
-          <a href="#"
-          >Fiesta</a>
+          <a href="#">Fiesta</a>
         </div>
 
-        <!-- 로그인 --> <!-- 나중에 링크 바꾸기 -->
+        <!-- 로그인 -->
+        <!-- 나중에 링크 바꾸기 -->
         <form action="/views/main.html" method="post" id="login-frm">
           <div class="login-area">
+<<<<<<< HEAD
             <input type="text" name="loginEmail"  id="loginEmail" value="" required>
             <!-- placeholder="이메일"  -->
             <label for="">이메일</label>
+=======
+            <input
+              type="text"
+              name="loginEmail"
+              id="loginEmail"
+              value=""
+              placeholder="이메일"
+              required
+            />
+            <!-- <label for="">이메일</label> -->
+>>>>>>> 2391cf459dd7849e3871f87ef87b8faf97350551
           </div>
 
           <div class="login-area">
-            <input type="password" name="loginPw" id="loginPw" value="" placeholder="비밀번호" required>
+            <input
+              type="password"
+              name="loginPw"
+              id="loginPw"
+              value=""
+              placeholder="비밀번호"
+              required
+            />
           </div>
 
           <button class="login-button">로그인</button>
         </form>
 
         <!-- 아이디, 비밀번호 찾기 -->
-        <div class="line">
-          또는
-        </div>
+        <div class="line">또는</div>
 
         <div class="findAccount">
-          <a href="../common/findAccount(이은지).html">아이디, 비밀번호를 잊으셨나요?</a>
+          <a href="../common/findAccount(이은지).html"
+            >아이디, 비밀번호를 잊으셨나요?</a
+          >
         </div>
       </section>
 
@@ -69,8 +86,6 @@
         </div>
       </section>
     </main>
-
-
 
     <!-- 푸터 -->
     <footer>
