@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>instagram</title>
-    <link rel="stylesheet" href="/resources/css/common-style.css" />
-    <link rel="stylesheet" href="/resources/css/main-style.css" />
-    <link rel="stylesheet" href="/resources/css/feed-menu-style.css">
+    <link rel="stylesheet" href="../resources/css/common-style.css" />
+    <link rel="stylesheet" href="../resources/css/main-style.css" />
+    <link rel="stylesheet" href="../resources/css/feed-menu-style.css">
     <script
       src="https://kit.fontawesome.com/591746f9e8.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" defer src="/resources/js/main.js"></script>
+    <script type="text/javascript" defer src="../resources/js/main.js"></script>
   </head>
   <body>
      <!-- 헤더 -->
@@ -48,30 +48,30 @@
         <nav id="nav-bar">
           <ul>
             <li>
-              <a href="#"> <i class="fa-solid fa-house"></i></a>
+              <a href="#" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/"> <i class="fa-solid fa-house"></i></a>
+            </li>
+            <li>
+              <a href="common/dm(용환재).html">
                 <i class="fa-regular fa-paper-plane"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="common/newpost-file(윤주영).html">
                 <i class="fa-regular fa-square-plus"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="common/popularfeed(신아민) .html">
                 <i class="fa-regular fa-compass"></i>
               </a>
             </li>
             <li>
-              <a href="#">
-                <i class="fa-regular fa-heart"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
+              <a href="common/myfeed(신아민).html">
                 <i class="fa-regular fa-user"></i>
               </a>
             </li>
@@ -79,6 +79,25 @@
         </nav>
       </section>
     </header>
+    <section class="toggle-search-section">
+      <form action="#">
+        <fieldset>
+          <input
+          type="text"
+          name="search"
+          id="searchInput"
+          placeholder="검색"
+          autocapitalize="none"
+          autocomplete="off"
+          />
+          <button id="search-glass">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </fieldset>
+          
+        </button>
+      </form>
+    </section>
 
     <!-- 메인 섹션 -->
     <!-- main 태그 안쪽에 구현할 태그 작성해주시면 됩니다. -->
@@ -93,10 +112,10 @@
               <!-- 작성자 프로필 -->
               <div class="feed-header">
                 <div class="writer-info">
-                  <a href="#" id="profile-photo">
+                  <a href="common/memberfeed(신아민) .html" id="profile-photo">
                     <img
                       id="feed-profile-image"
-                      src="/resources/images/karina.jpeg"
+                      src="../resources/images/karina.jpeg"
                     />
                   </a>
                   <a href="#" class="feed-memberId">karina_aespas_</a>
@@ -116,7 +135,7 @@
                   <li>
                     <img
                       class="uploaded-image"
-                      src="/resources/images/karina-feed.jpg"
+                      src="../resources/images/karina-feed.jpg"
                       alt=""
                     />
                   </li>
@@ -136,7 +155,7 @@
                   <a href="#" id="dmBtn"><i class="fa-regular fa-paper-plane"></i></a>
                 </div>
                 <div>
-                  <a href="#" id="bookmarkBtn"><i class="fa-regular fa-bookmark"></i></a>
+                  <a href="#bookmarkBtn" id="bookmarkBtn"><i class="fa-regular fa-bookmark"></i></a>
                 </div>
               </div>
 
@@ -152,10 +171,8 @@
                   <div class="hashtag">
                     <a href="#">#aespa</a><a href="#">#에스파</a><a href="#">#KARINA</a><a href="#">#카리나</a>
                   </div>
-                  <button type="button">
-                    <span>...</span>
+                  <button type="button" id="moreBtn">
                     <span id="btn-more"> 더 보기</span>
-
                   </button>
                 </div>
   
@@ -171,7 +188,7 @@
                           <a href="#" id="comment-profile">
                             <img
                               id="comment-profile-image"
-                              src="/resources/images/안유진.jpg"
+                              src="../resources/images/안유진.jpg"
                             />
                           </a>
                           <div>
@@ -181,7 +198,7 @@
                                 <span class="comment-content">이 언니 넘모 이뿌당</span>
                               </div>
                               <div>
-                                <a href="#" ><i class="fa-regular fa-heart like-heart"></i></a>
+                                <a href="#" class="comment-like-btn" ><i class="fa-regular fa-heart"></i></a>
                               </div>
                             </div>
                             <div class="create-reply">
@@ -203,7 +220,7 @@
                           <a href="#" id="comment-profile">
                             <img
                               id="comment-profile-image"
-                              src="/resources/images/장원영.jpg"
+                              src="../resources/images/장원영.jpg"
                             />
                           </a>
                           <div>
@@ -213,7 +230,7 @@
                                 <span class="comment-content">사랑해</span>
                               </div>
                               <div>
-                                <a href="#" ><i class="fa-regular fa-heart like-heart"></i></a>
+                                <a href="#" class="comment-like-btn" ><i class="fa-regular fa-heart"></i></a>
                               </div>
                             </div>
                             <div class="create-reply">
@@ -235,7 +252,7 @@
                               <a href="#" id="comment-profile">
                                 <img
                                   id="comment-profile-image"
-                                  src="/resources/images/karina.jpeg"
+                                  src="../resources/images/karina.jpeg"
                                 />
                               </a>
                               <div>
@@ -246,7 +263,7 @@
                                     <span class="comment-content">나두 사랑해</span>
                                   </div>
                                   <div>
-                                    <a href="#" ><i class="fa-regular fa-heart like-heart"></i></a>
+                                    <a href="#" class="comment-like-btn"><i class="fa-regular fa-heart"></i></a>
                                   </div>
                                 </div>
                                 <div class="create-reply">
@@ -269,7 +286,7 @@
                           <a href="#" id="comment-profile">
                             <img
                               id="comment-profile-image"
-                              src="/resources/images/이영지.jpg"
+                              src="../resources/images/이영지.jpg"
                             />
                           </a>
                           <div>
@@ -279,7 +296,7 @@
                                 <span class="comment-content">레전드</span>
                               </div>
                               <div>
-                                <a href="#" ><i class="fa-regular fa-heart like-heart"></i></a>
+                                <a href="#"  class="comment-like-btn"><i class="fa-regular fa-heart"></i></a>
                               </div>
                             </div>
                             <div class="create-reply">
@@ -302,8 +319,8 @@
                 </div>
               </div>
               <div id="comment-input-area">
-                <form action="#">
-                  <input type="text" placeholder="댓글 달기..." />
+                <form name="commentForm" action="#">
+                  <input name="comment" id="commentInput" type="text" placeholder="댓글 달기..." autocomplete="off"/>
                   <button disabled>게시</button>
                 </form>
               </div>
@@ -341,6 +358,6 @@
       </div>
     </div>
 
-
+    
   </body>
 </html>

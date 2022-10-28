@@ -31,7 +31,7 @@
 
 a {
   text-decoration: none;
-  color: var(--icon-button-color);
+  color: black;
 }
 
 body {
@@ -85,7 +85,6 @@ header > section {
 }
 
 .logo-section {
-  flex-basis: 35%;
 }
 
 .logo-section a {
@@ -102,13 +101,9 @@ header > section {
   height: auto;
 }
 
-.search-section {
-  flex-basis: 40%;
-}
-
 .search-section fieldset {
   height: 36px;
-  width: 268px;
+  width: 60%;
   background-color: --main-font-color;
   border: none;
   border-radius: 5px;
@@ -180,8 +175,7 @@ nav > ul {
 }
 
 nav li {
-  width: 38px;
-  flex-basis: 17%;
+  margin-left: 10px;
   flex-shrink: 0;
 
   text-align: center;
@@ -195,6 +189,14 @@ nav i {
   flex-shrink: 0;
 }
 
+#searchBtn {
+  display: none;
+}
+
+.toggle-search-section {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   /* Desktop */
 }
@@ -206,6 +208,58 @@ nav i {
 @media screen and (max-width: 780px) {
   .search-section > form {
     display: none;
+  }
+
+  #searchBtn {
+    display: inline;
+  }
+
+  .toggle-search-section {
+    width: 100vw;
+    height: 80px;
+
+    position: sticky;
+    top: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+    /* display: none; */
+  }
+
+  .toggle-search-section fieldset {
+    height: 38px;
+    width: 100%;
+    background-color: #ffffff90;
+    border: 1px solid #8e8e8e;
+    border-radius: 5px;
+    padding-left: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toggle-search-section fieldset > input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: var(--madium-font-size);
+    background-color: #ffffff00;
+
+    flex-basis: 80%;
+  }
+
+  .toggle-search-section fieldset > button {
+    height: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: var(--fiesta-color);
+    background-color: #ffffff00;
+
+    flex-basis: 10%;
   }
 }
 
@@ -226,5 +280,22 @@ nav i {
 
   #header-section {
     width: vw;
+  }
+
+  #newPost {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #8e8e8e;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
   }
 }

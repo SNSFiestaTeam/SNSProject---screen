@@ -1,19 +1,32 @@
+:root {
+  --background-color: white;
+  --main-font-color: #8e8e8e;
+  --icon-button-color: #262626;
+  --point-font-color: #0095f6;
+  --mention-font-color: #00376b;
+  --fiesta-color: #dd4132;
+  --small-font-size: 12px;
+  --madium-font-size: 16px;
+  --large-icon-size: 24px;
+}
+
+
 .modal_background{
   position: fixed;
   top:0; left:0; bottom:0; right:0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color:rgba(0,0,0,0.5);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  z-index: 10;
+  justify-content:center;
+  align-items:center;
+  /* display:none; */
+  padding:15px;
+  z-index: 5;
 
 }
 #close-post{
   position: fixed;
   top:0; left:100; bottom:100; right:0;
-  z-index: 10000;
+  z-index: 6;
   margin: 20px;
   background-color:transparent;
   transform:scale(2) ;
@@ -21,14 +34,38 @@
   color: white;
 }
 /* ************** 게시물 작성 창 ******************* */
+.modal_post_section{
+
+  position: relative;
+ /*width: 50vw; */
+ display: flex;
+ justify-content:center;
+ align-items:center;
+
+ width:60vw;
+ min-width: 388px;
+ min-height: 431px;
+ max-width: 795px;
+ max-height: 838px;
+
+ border-radius:10px;
+ overflow:scroll;
+scrollbar-width:none;
+
+ box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
+
+}
+.modal_post_section::before{
+  content: "";
+  display: block;
+  /* padding-top: 0%; */
+}
 .new-post-background{
-  width: 50vw;
-  height: 50vh;
-  /* min-width: 450px; */
-  /* min-height: 485px; */
-  /* max-width: 450px; */
+  position: absolute;
+  top:0; left:0; bottom:0; right:0;
+
   border-radius: 10px;
-  overflow: hidden;
+  overflow: auto;
 
   background-color: white;
   box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
@@ -37,11 +74,11 @@
 
 
 
+
 /* ----- 게시물작성 top ------ */
 .new-post-top-section{
   width: 100%;
-  height: 7%;
-  /* background-color: rgb(177, 31, 31); */
+  height: 8%;
 }
 .new-post-top{
   display: flex;
@@ -59,7 +96,7 @@
 
 }
 .new-post-top-next-btn{
-  color: #0095f6;
+  color: var(--fiesta-color);
   box-sizing: content-box;
   font-size: 19px;
   flex-direction: row-reverse;
@@ -76,27 +113,57 @@
 /* ----- 게시물작성 bottom ------ */
 .new-post-bottom-section{
   display: flex;
-
   width: 100%;
-  height: 93%;
-  /* background-color: #0095f6; */
+  height: 92%;
 }
+.bottom-left-box{width: 70%;}
+.bottom-right-box{width: 30%;}
 /* ********** 왼쪽 BOX ************ */
-.new-post-bottom-file{
-  width: 50%;
-  height: 100%;
+.bottom-left-box{
+  /* float: left; */
+  /* display: flex;
+  width: 50%; */
+  /* height: 50%; */
+  position: relative;
+  /*width: 50vw; */
+  display: flex;
+  /* justify-content:center;
+  align-items:center; */
 
-  background-color: beige;
+  width:60vw;
+  min-width: 388px;
+  min-height: 431px;
+  max-width: 795px;
+  max-height: 838px;
+
 }
-.new-post-bottom-file > img{
+.bottom-left-box::before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.bottom-left-box{
   width: 100%;
   height: 100%;
+}
+.new-post-bottom-file>img{
+  position: absolute;
+  /* top:0; left:0; bottom:0; right:0; */
+  
+  width: 100%;
+  height: 100%;
+ 
 }
 
 
 /* *************오른쪽 box ***************/
+.new-post-bottom-set, .new-post-bottom-textsize{
+  border-bottom: 2px solid #ccc;
+}
+
 .new-post-bottom-information{
  height: 100%;
+ width: 100%;
  display: flex;
  flex-direction: column;
  
@@ -107,9 +174,10 @@
   display: flex;
   /* justify-content: center; */
   align-items: center;
-
 }
-
+.new-post-bottom-member >p{
+  font-size: 7px;
+}
 /* 프로필사진 */
 .new-post-bottom-member > img{
   width: 28px;
@@ -119,22 +187,30 @@
 /* 텍스트작성 부분 */
 .new-post-bottom-inputtext > textarea{
   width: 100%;
-  /* border: none; */
+  border: none;
   resize: none;
   /* background-color: blue; */
+  color: rgb(141, 141, 141);
+  font-size: 10px;
+  padding: 0 10px;
 }
 .new-post-bottom-inputtext > textarea:focus{
   outline: none;
 }
+/* 작성가능 글자수 */
+.new-post-bottom-textsize{
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(220, 220, 220);
+  padding: 10px;
+  font-size: 5px;
+}
+/* 설정부분 */
+.new-post-bottom-set{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 
-/* .new-post-bottom-inputtext{
-  width: 218px;
-  height: 97px;
-  /* font-color: #ccc; */
-  /* order: none; */
-/* } */ 
-/* .new-post-bottom-inputtext:hover{
-  width: 218px;
-  height: 97px;
-  border: none;
-} */
+}
+
+

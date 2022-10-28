@@ -63,7 +63,6 @@ main{
 
 .logo-area a {
     font-family: "Cookie", cursive;
-    /* font-family: 'Chewy', cursive; */
     color: #dd4132;
     font-size: 60px;
     width: 120px;
@@ -72,12 +71,11 @@ main{
 
 
 
-#logo-sentence {
+.logo-sentence {
     font-size: 0.9em;
 }
 
-
-#signUp-frm{
+.signUp-frm{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,22 +88,17 @@ main{
     justify-content: space-between;
 
     width: 95%;
+    height: 45px;
     margin: 0 0 2% 0;
-    padding: 3% 4%;
+    padding: 4% 4% 0;
     background-color: #FAFAFA;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-.signUp-area:focus-within{
-    border: 1px solid var(--fiesta-color);
-}
-
-
 
 .signUp-area > input{
     width: 100%;
-    /* font-size: 0.8em; */
     background-color: #FAFAFA;
     border: none;
     outline: none;
@@ -113,10 +106,18 @@ main{
 
 .signUp-area i {
     color: lightgray;
+    right: 10px;
+    position: absolute;
 }
 
 .icon-nickname-refresh{
-    padding: 0 5px;
+    right: 25px;
+    position: absolute;
+}
+
+.icon-pw-showHide{
+    right: -2px;
+    position: absolute;
 }
 
 
@@ -128,6 +129,51 @@ main{
 
 #i-eye:hover{color:#111111;}
 #i-eyeSlash:hover{ color:#111111;}
+
+
+
+/* 트랜지션  */
+.signUp-area{
+    position: relative;
+}
+
+
+.signUp-area > label{
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    padding: 0 0 2%;
+    font-size: 0.8em;
+    color: #b4b4b4;
+    transition: 0.3s;
+}
+
+.signUp-area input:focus ~ label{
+    position: absolute;
+    transform: translateY(-8px);
+    font-size: 0.5em;
+    color: var(--fiesta-color);
+    transition-timing-function: ease-in-out;
+}
+
+
+.signUp-area input:valid ~ label{
+    position: absolute;
+    transform: translateY(-8px);
+    padding: 0;
+    font-size: 0.5em;
+}
+
+
+.signUp-area:focus-within{
+    border: 1px solid var(--fiesta-color);
+}
+
+
+
+
+
 
 
 .signUp-button{

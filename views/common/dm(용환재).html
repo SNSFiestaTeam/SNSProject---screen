@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>instagram</title>
-    <link rel="stylesheet" href="../../resources/css/common-style.css" />
-    <link rel="stylesheet" href="../../resources/css/dm-style.css" />
+    <link rel="stylesheet" href="/resources/css/common-style.css" />
+    <link rel="stylesheet" href="/resources/css/dm-style.css" />
     <script
       src="https://kit.fontawesome.com/591746f9e8.js"
       crossorigin="anonymous"
@@ -19,8 +19,7 @@
         <!-- 로고 -->
         <section class="logo-section">
           <a href="#"
-            ><img id="logo" src="../../resources/images/instagram.png"
-          /></a>
+            >Fiesta</a>
         </section>
         <!-- 검색창 -->
         <section class="search-section">
@@ -81,12 +80,16 @@
         <div class="left">
           <section class="up">
             <div class="id">로그인아이디</div>
+            <!-- 로그인 연결 -->
             <a href="#"
               ><img
                 id="login"
                 src="../../resources/images/arrow-down.png"
                 style="width: 16px"
             /></a>
+            <a href="/views/common/dm-message.html">
+              <img src="/resources/images/write.png" id="dm-message" style="width: 24px;">
+            </a>
           </section>
           <section class="down"></section>
         </div>
@@ -96,7 +99,7 @@
           <div class="message-info">
             친구나 그룹에 비공개 사진과 메세지를 보내보세요.
           </div>
-          <button class="send" type="button">메시지 보내기</button>
+          <button class="send" type="button"><a href="/views/common/dm-message.html"> 메시지 보내기</a> </button>
         </div>
       </section>
     </main>

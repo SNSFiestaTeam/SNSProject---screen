@@ -84,101 +84,65 @@
     <!-- 모달 배경 -->
     <div class="modal_background">
       <!-- 모달 흰창 -->
-      <div class="new-post-background">
-        <!-- 게시물 작성 top -->
-        <section class="new-post-top-section">
-          <div class="new-post-top">
-            <button class="new-post-top-back-btn" onclick="history.back()">
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <div class="new-post-top-title">새 게시물 만들기</div>
-            <button class="new-post-top-next-btn">다음</button>
-          </div>
-        </section>
+      <section class="modal_post_section">
+        <div class="new-post-background">
+          <!-- 게시물 작성 top -->
+          <section class="new-post-top-section">
+            <div class="new-post-top">
+              <button class="new-post-top-back-btn" onclick="history.back()">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <div class="new-post-top-title">새 게시물 만들기</div>
+              <button class="new-post-top-next-btn">공유하기</button>
+            </div>
+          </section>
 
-        <section class="new-post-bottom-section">
-          <!-- <section class="bottom-left-section"> -->
-          <div class="new-post-bottom-file">
-            <img id="file" src="/resources/images/square2.jpg" alt="파일미리보기">
-          </div>
-
-          <div class="new-post-bottom-information">
-            <div class="new-post-bottom-member"> 
-              <img id="file" src="/resources/images/user.jpg" alt="작성자 프로필">
-              <p>juyeong7063</p>
-            </div>
-            
-            <div class="new-post-bottom-inputtext">
-                <textarea name="content" rows="5" ></textarea>
-                      문구 입력...
-                    </textarea>
-
-            </div>
-            <div class="new-post-bottom-textsize">
-              <p>0/2,200</p>
-            </div>
-            <div class="new-post-bottom-set">
-              <div>접근성</div>
-              <div> > </div>
-            </div>
-            <div class="new-post-bottom-set">
-              <div>고급설정</div>
-              <div> > </div>
+          <section class="new-post-bottom-section">
+            <div class="bottom-left-box">
+              <div class="new-post-bottom-file">
+                <img id="file" src="/resources/images/square2.jpg" alt="파일미리보기">
+              </div>
             </div>
 
-          </div>
+            <div class="bottom-right-box">
+              <div class="new-post-bottom-information">
+                <div class="new-post-bottom-member">
+                  <img id="file" src="/resources/images/user.jpg" alt="작성자 프로필">
+                  <p>juyeong7063</p>
+                </div>
 
-          <!-- </section> -->
-          <!-- <section class="bottom-right-section">
+                <div class="new-post-bottom-inputtext">
+                  <textarea name="content" rows="5">문구 입력...</textarea>
+                </div>
 
-          </section> -->
-        </section>
+                <div class="new-post-bottom-textsize">
+                  <span>0</span>
+                  /
+                  <span>3000</span>
+                </div>
 
-
-        <!-- <div class="file-eidt">
-          
-
-          
-
-
-          <div class="img-btn">
-
-            <div class="img-cut-menu">
-              <input id="img-cut-checkbox" type="checkbox" />
-
-              이미지 편집
-              <div>
-                <label for="img-cut-checkbox">
-                  <div class="btn-background">
-                    <i class="fa-solid fa-scissors"></i>
-                  </div>
-                </label>
+                <div class="new-post-bottom-set">
+                  <div>접근성</div>
+                  <div> > </div>
+                </div>
+                <div class="new-post-bottom-set">
+                  <div>고급설정</div>
+                  <div> > </div>
+                </div>
               </div>
 
             </div>
-
-            이미지 추가
-            <div class="img-add-menu">
-              <input id="img-add-checkbox" type="checkbox" />
-              <div class="btn-background">
-                <i class="fa-regular fa-square-plus"></i>
-              </div>
+          </section>
+      </section>
 
 
-            </div>
 
-          </div>
-
-        </div> -->
-
-
-      </div>
 
 
 
     </div>
 
-    </div>
+
 
     </div>
 

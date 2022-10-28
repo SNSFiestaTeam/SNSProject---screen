@@ -30,7 +30,7 @@ main{
 /* 영역 크기 구분 */
 /* 전체 */
 .findAccount-section{
-    width: 400px;
+    width: 360px;
     height: 550px;
 
     background-color: #ffffff;
@@ -112,10 +112,12 @@ main{
 
 }
 
+/* 이메일 입력 */
 .email-input-area{
-    width: 95%;
+    width: 85%;
+    height: 45px;
     margin: 0 0 2% 0;
-    padding: 3.5% 4%;
+    padding: 3.5% 4% 1%;
     background-color: #FAFAFA;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -123,6 +125,58 @@ main{
     display: flex;
     align-items: center;
 }
+
+
+.email-input-area input{
+    width: 100%;
+    background-color: #FAFAFA;
+    border: none;
+    outline: none;
+}
+
+
+
+/* 트랜지션 적용 */
+.email-input-area{
+    position: relative;
+}
+
+
+.email-input-area > label{
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    padding: 0 0 2%;
+    font-size: 0.8em;
+    color: #b4b4b4;
+    transition: 0.3s;
+}
+
+.email-input-area input:focus ~ label{
+    position: absolute;
+    transform: translate(1px, -8px);
+    font-size: 0.5em;
+    color: var(--fiesta-color);
+    transition-timing-function: ease-in-out;
+}
+
+
+.email-input-area input:valid ~ label{
+    position: absolute;
+    transform: translate(1px, -8px);
+    padding: 0;
+    font-size: 0.5em;
+}
+
+
+.email-input-area:focus-within{
+    border: 1px solid var(--fiesta-color);
+}
+
+
+
+
 
 #loginEmail{
     width: 100%;
@@ -132,7 +186,7 @@ main{
 } 
 
 .login-button{
-    width: 95%;
+    width: 85%;
     height: 36px;
     background-color: var(--fiesta-color);
     border-radius: 5px;
@@ -145,7 +199,7 @@ main{
 
 /* 비밀번호를 재설정할 수 없나요? */
 .notFoundAccount a{
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: var(--main-font-color);
     margin: 10% 0;
 
@@ -198,7 +252,7 @@ main{
 
 /* 로그인으로 */
 .toLogin{
-    width: 400px;
+    width: 360px;
     height: 57px;
 
     margin: 3% 0;
