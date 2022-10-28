@@ -48,6 +48,11 @@
         <nav id="nav-bar">
           <ul>
             <li>
+              <a href="#" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </li>
+            <li>
               <a href="/"> <i class="fa-solid fa-house"></i></a>
             </li>
             <li>
@@ -66,11 +71,6 @@
               </a>
             </li>
             <li>
-              <a href="#">
-                <i class="fa-regular fa-heart"></i>
-              </a>
-            </li>
-            <li>
               <a href="common/myfeed(신아민).html">
                 <i class="fa-regular fa-user"></i>
               </a>
@@ -79,6 +79,25 @@
         </nav>
       </section>
     </header>
+    <section class="toggle-search-section">
+      <form action="#">
+        <fieldset>
+          <input
+          type="text"
+          name="search"
+          id="searchInput"
+          placeholder="검색"
+          autocapitalize="none"
+          autocomplete="off"
+          />
+          <button id="search-glass">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </fieldset>
+          
+        </button>
+      </form>
+    </section>
 
     <!-- 메인 섹션 -->
     <!-- main 태그 안쪽에 구현할 태그 작성해주시면 됩니다. -->
@@ -339,6 +358,6 @@
       </div>
     </div>
 
-
+    
   </body>
 </html>
