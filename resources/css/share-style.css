@@ -1,3 +1,15 @@
+:root {
+  --background-color: white;
+  --main-font-color: #8e8e8e;
+  --icon-button-color: #262626;
+  --point-font-color: #0095f6;
+  --mention-font-color: #00376b;
+  --fiesta-color: #dd4132;
+  --small-font-size: 12px;
+  --medium-font-size: 16px;
+  --large-icon-size: 24px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +23,13 @@ body {
   height: 100vh;
 }
 
-.declaration-container {
+
+a{
+  color:black;
+}
+
+
+.share-container {
   width: 100vw;
   height: 100vh;
   background-color: #00000070;
@@ -37,16 +55,57 @@ body {
   align-items: center;
 }
 
-.declaration-content {
-  width: 90%;
-  flex-basis: 70%;
-  border-bottom: 1px solid #ddd;
+.share-title {
+  width: 100%;
+  flex-basis: 20%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid black;
 }
 
-#declarationOption {
-  width: 100%;
-  outline: none;
+
+.share-title span {
+  color: var(--fiesta-color);
+  font-weight: bold;
+  font-size: 17px;
 }
+
+
+.share-content {
+  width: 90%;
+  flex-basis: 70%;
+  padding-left: 10%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+
+  border-bottom: 1px solid #ddd;
+  
+  border: 1px solid blue;
+}
+
+/* .share-content div {} */
+/* 
+.share-content-icon, .share-content-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  border: 1px solid blue;
+} */
+
+
+/* .share-container span {
+  margin: 15px;
+  border: 1px solid black;
+}
+
 
 #declaration-textarea {
   box-sizing: border-box;
@@ -59,7 +118,7 @@ body {
   padding: 5px;
 
   border: 1px solid #828282;
-}
+} */
 
 .feed-menu-btn {
   width: 100%;
@@ -88,8 +147,4 @@ body {
 
 .btn2 > a {
   border-bottom: 1px solid #ddd;
-}
-
-.btn2 {
-  font-weight: bold;
 }

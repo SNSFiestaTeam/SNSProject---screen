@@ -118,7 +118,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    width: 60vw;
+    width: 100vw;
 
 }
 
@@ -203,6 +203,12 @@ body {
     color: white;
     font-size: 14px;
   }
+
+  @media screen and (min-width: 1000px) {
+    .feed-section {
+      width: 1000px;
+    }
+}
 
 
 
