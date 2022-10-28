@@ -50,7 +50,8 @@
   max-height: 838px;
 
   border-radius:10px;
-  overflow:auto;
+  overflow:scroll;
+  scrollbar-width:none;
 
   box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
 }

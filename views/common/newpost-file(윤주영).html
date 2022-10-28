@@ -73,11 +73,9 @@
   <!-- 메인 섹션 -->
   <!-- main 태그 안쪽에 구현할 태그 작성해주시면 됩니다. -->
   <main>
-    <form action="#">
-      <button name="close" id="close-post">
+      <button onclick="history.back()" name="close" id="close-post">
         <span id="post-x"><i class="fa-solid fa-x"></i></span>
       </button>
-    </form>
 
     <!-- 모달 배경 -->
     <div class="modal_background">
@@ -92,7 +90,7 @@
           </section>
           <!-- 게시물 작성 bottom -->
           <section class="new-post-bottom-section">
-            <main class="new-post-file-input-box">
+            <div class="new-post-file-input-box">
               <div class="new-post-file-img">
                 <i class="fa-solid fa-photo-film fa-4x"></i>
               </div>
@@ -103,8 +101,10 @@
                 <label for="file-input"> 컴퓨터에서 선택</label>
                 <input type="file" name="new-post-file" id="file-input">
               </div>
-              
+
               <!-- multiple : 2개 이상의 파일 -->
+            </div>
+          </section>
         </div>
       </section>
     </div>

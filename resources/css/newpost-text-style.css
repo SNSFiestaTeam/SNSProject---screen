@@ -49,10 +49,11 @@
  max-height: 838px;
 
  border-radius:10px;
- overflow:auto;
+ overflow:scroll;
+scrollbar-width:none;
 
  box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
- overflow: auto;
+
 }
 .modal_post_section::before{
   content: "";
@@ -112,21 +113,31 @@
 /* ----- 게시물작성 bottom ------ */
 .new-post-bottom-section{
   display: flex;
-
   width: 100%;
   height: 92%;
 }
 .bottom-left-box{width: 70%;}
 .bottom-right-box{width: 30%;}
 /* ********** 왼쪽 BOX ************ */
-.new-post-bottom-file{
+.bottom-left-box{
   /* float: left; */
-  display: flex;
-  width: 100%;
+  /* display: flex;
+  width: 50%; */
   /* height: 50%; */
+  position: relative;
+  /*width: 50vw; */
+  display: flex;
+  /* justify-content:center;
+  align-items:center; */
+
+  width:60vw;
+  min-width: 388px;
+  min-height: 431px;
+  max-width: 795px;
+  max-height: 838px;
 
 }
-.new-post-bottom-file::before{
+.bottom-left-box::before{
   content: "";
   display: block;
   padding-top: 100%;
@@ -135,9 +146,9 @@
   width: 100%;
   height: 100%;
 }
-.bottom-left-box>img{
+.new-post-bottom-file>img{
   position: absolute;
-  top:0; left:0; bottom:0; right:0;
+  /* top:0; left:0; bottom:0; right:0; */
   
   width: 100%;
   height: 100%;
@@ -163,14 +174,14 @@
   display: flex;
   /* justify-content: center; */
   align-items: center;
-  
-
 }
-
+.new-post-bottom-member >p{
+  font-size: 7px;
+}
 /* 프로필사진 */
 .new-post-bottom-member > img{
   width: 28px;
-  height: 100%;
+  height: 28px;
   margin: 0 10px;
 }
 /* 텍스트작성 부분 */
