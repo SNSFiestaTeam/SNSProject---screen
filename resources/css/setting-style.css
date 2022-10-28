@@ -145,7 +145,55 @@ div.main > input{
 }
 
 @media screen and (max-width: 470px) {
+.setting-content{
+    margin-top: 0;
 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.setting-main{
+    width: 100vw;
+}
+.setting-content .list-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.setting-content .left-side{
+    width: 100vw;
+}
+
+
+
+}
+
+@media screen and (min-width: 471px) and (max-width: 1023px) {
+    .setting-content{
+        margin-top: 0;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .setting-main{
+        width: 100vw;
+    }
+    .setting-content .list-group{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    
+    .setting-content .left-side{
+        width: 100vw;
+    }
+    
 
 
 }

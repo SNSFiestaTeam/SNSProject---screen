@@ -142,3 +142,81 @@
     text-decoration: none;
     font-size: 14px;
 }
+
+@media screen and (max-width: 470px) {
+    .setting-content{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .list-group{
+        width: 100vw;
+    }
+    form{
+        width: 90vw;
+    }
+    
+    .setting-content .list-group{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+
+    .setting-main{
+        width: 100vw;
+    }
+
+    form > div{
+        display: flex;
+
+    }
+    
+    .setting-content .left-side{
+        width: 100vw;
+    }
+    
+    
+    
+    }
+    
+    @media screen and (min-width: 471px) and (max-width: 1023px) {
+        .setting-content{
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .list-group{
+            width: 100vw;
+        }
+        form{
+            width: 100vw;
+        }
+        
+        .setting-content .list-group{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+        }
+    
+        .setting-main{
+            width: 100vw;
+            
+            
+        }
+    
+        form > div{
+            display: flex;
+    
+        }
+        
+        .setting-content .left-side{
+            width: 100vw;
+        }
+        
+        
+    
+    }
