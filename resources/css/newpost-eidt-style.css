@@ -16,14 +16,17 @@
   top:0; left:0; bottom:0; right:0;
   background-color:rgba(0,0,0,0.5);
   display: flex;
-  justify-content:center;
+  flex-direction: column;
+  /* justify-content:center; */
   align-items:center;
   /* display:none; */
   padding:15px;
   z-index: 5;
+  
 
 }
 #close-post{
+  display: inline;
   position: fixed;
   top:0; left:100; bottom:100; right:0;
   z-index: 6;
@@ -43,15 +46,17 @@
   justify-content:center;
   align-items:center;
 
-  width:60vw;
-  min-width: 388px;
+  width:60%;
+  /* min-width: 388px; */
   min-height: 431px;
   max-width: 795px;
   max-height: 838px;
 
   border-radius:10px;
-  overflow:scroll;
-  scrollbar-width:none;
+  /* overflow:hidden;
+  scrollbar-width:none; */
+
+  margin:auto;
 
   box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
 }
@@ -69,6 +74,7 @@
   overflow: hidden;
 
   background-color: white;
+
   box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
 
 }

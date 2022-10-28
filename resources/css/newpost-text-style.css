@@ -16,7 +16,7 @@
   top:0; left:0; bottom:0; right:0;
   background-color:rgba(0,0,0,0.5);
   display: flex;
-  justify-content:center;
+  /* justify-content:center; */
   align-items:center;
   /* display:none; */
   padding:15px;
@@ -36,22 +36,22 @@
 /* ************** 게시물 작성 창 ******************* */
 .modal_post_section{
 
-  position: relative;
  /*width: 50vw; */
  display: flex;
  justify-content:center;
  align-items:center;
 
  width:60vw;
- min-width: 388px;
+ /* min-width: 388px;
  min-height: 431px;
  max-width: 795px;
- max-height: 838px;
+ max-height: 838px; */
 
  border-radius:10px;
- overflow:scroll;
-scrollbar-width:none;
+ /* overflow:scroll; */
+/* scrollbar-width:none; */
 
+margin:auto;
  box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
 
 }
@@ -61,11 +61,14 @@ scrollbar-width:none;
   /* padding-top: 0%; */
 }
 .new-post-background{
-  position: absolute;
-  top:0; left:0; bottom:0; right:0;
+
+  width: 100%;
+  height: 48vw;
+  margin: auto;
+
 
   border-radius: 10px;
-  overflow: auto;
+  /* overflow: auto; */
 
   background-color: white;
   box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
@@ -93,6 +96,7 @@ scrollbar-width:none;
   padding: 15px;
   /* font-size: 25px; */
   width: 100px;
+  border-radius:10px;
 
 }
 .new-post-top-next-btn{
@@ -116,25 +120,19 @@ scrollbar-width:none;
   width: 100%;
   height: 92%;
 }
-.bottom-left-box{width: 70%;}
-.bottom-right-box{width: 30%;}
+.bottom-left-box{width: 50%;}
+.bottom-right-box{width: 50%;}
 /* ********** 왼쪽 BOX ************ */
 .bottom-left-box{
-  /* float: left; */
-  /* display: flex;
-  width: 50%; */
-  /* height: 50%; */
-  position: relative;
-  /*width: 50vw; */
-  display: flex;
-  /* justify-content:center;
-  align-items:center; */
 
+  position: relative;
+
+  display: flex;
   width:60vw;
   min-width: 388px;
-  min-height: 431px;
-  max-width: 795px;
-  max-height: 838px;
+  /* min-height: 431px; */
+  /* max-width: 795px; */
+  /* max-height: 838px; */
 
 }
 .bottom-left-box::before{
@@ -151,7 +149,7 @@ scrollbar-width:none;
   /* top:0; left:0; bottom:0; right:0; */
   
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
  
 }
 
@@ -167,6 +165,11 @@ scrollbar-width:none;
  display: flex;
  flex-direction: column;
  
+ 
+}
+.bottom-right-box{
+  overflow:auto;
+scrollbar-width:none;
 }
 /* 작성자 */
 .new-post-bottom-member{
@@ -210,6 +213,8 @@ scrollbar-width:none;
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  font-size: 10px;
+
 
 }
 

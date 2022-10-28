@@ -16,13 +16,16 @@
   top:0; left:0; bottom:0; right:0;
   background-color:rgba(0,0,0,0.5);
   display: flex;
-  justify-content:center;
+  flex-direction: column;
+  /* justify-content:space-between; */
+  /* justify-content: center; */
   align-items:center;
   /* display:none; */
   padding:15px;
   z-index: 5;
 
 }
+
 #close-post{
   position: fixed;
   top:0; left:100; bottom:100; right:0;
@@ -50,9 +53,9 @@
   max-height: 838px;
 
   border-radius:10px;
-  overflow:scroll;
-  scrollbar-width:none;
+  /* overflow:scroll; */
 
+  margin:auto;
   box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
 }
 
@@ -115,10 +118,10 @@
     /* top:0; left:0; bottom:0; right:0; */
     
   }
-  .new-post-file-img > i{
+  /* .new-post-file-img > i{ */
     /* transform:scale(4) ; */
     /* margin-bottom: 30px; */
-  }
+  /* } */
 .input-message{
     font-size: 23px;
     text-align: center;
