@@ -95,6 +95,20 @@ body {
     color :white
 }
 
+.down .chat .pro-img{
+width: 30px;
+height: 30px;
+}
+
+.down .chat > span{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.down .chat > .chat-content{
+    display: c;
+}
+
 @media screen and (max-width: 470px) {
 
 
@@ -104,6 +118,8 @@ body {
 
 .container{
     border: none;
+    margin-top: 0;
+
 }
 
 .left{
