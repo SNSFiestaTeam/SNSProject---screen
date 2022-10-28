@@ -101,9 +101,16 @@ header > section {
   height: auto;
 }
 
+.search-section {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+}
+
 .search-section fieldset {
   height: 36px;
-  width: 60%;
+  width: 90%;
   background-color: --main-font-color;
   border: none;
   border-radius: 5px;
@@ -111,6 +118,10 @@ header > section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.search-section fieldset input {
+  width: 200px;
 }
 
 #searchX {
