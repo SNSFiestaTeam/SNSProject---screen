@@ -97,10 +97,18 @@ body {
 
 @media screen and (max-width: 470px) {
 
+
+.container > .right {
+ display: none;
+}
+
+.container{
+    border: none;
+}
+
 .left{
     width: 100%;
-    height: 100vh;
-    justify-content: center;
+    
 }
 
 }
