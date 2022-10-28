@@ -89,3 +89,7 @@ body {
 .btn2 > a {
   border-bottom: 1px solid #ddd;
 }
+
+.btn2 {
+  font-weight: bold;
+}
