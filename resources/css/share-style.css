@@ -63,7 +63,7 @@ a{
   justify-content: center;
   align-items: center;
 
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 
@@ -75,18 +75,29 @@ a{
 
 
 .share-content {
-  width: 90%;
   flex-basis: 70%;
-  padding-left: 10%;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: space-between;
 
   border-bottom: 1px solid #ddd;
   
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+}
+
+
+.share-content div {
+  margin: 10px;
+}
+
+.share-content i {
+  margin-right: 10px;
+}
+
+.share-content a {
+  font-size: 0.9em;
+  font-weight: bold;
 }
 
 /* .share-content div {} */
