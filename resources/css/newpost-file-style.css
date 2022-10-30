@@ -11,79 +11,105 @@
 }
 
 
-.modal_background{
+.modal_background {
   position: fixed;
-  top:0; left:0; bottom:0; right:0;
-  background-color:rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   /* justify-content:space-between; */
   /* justify-content: center; */
-  align-items:center;
+  align-items: center;
   /* display:none; */
-  padding:15px;
+  padding: 15px;
   z-index: 5;
 
 }
 
-#close-post{
+#close-post {
   position: fixed;
-  top:0; left:100; bottom:100; right:0;
+  top: 0;
+  left: 100;
+  bottom: 100;
+  right: 0;
   z-index: 6;
   margin: 20px;
-  background-color:transparent;
-  transform:scale(2) ;
+  background-color: transparent;
+  transform: scale(2);
   cursor: pointer;
   color: white;
 }
+
 /* ************** 게시물 작성 창 ******************* */
+/* 점점커지는 사이즈 */
+@media screen and (min-width:721px),
+(min-height:571px) {
+  .modal_post_section {
+    /* height: 90%; */
+    /* width: 76vh; */
+    width: 50%;
+    /* height: 85%; */
+    max-width: 855px;
+    max-height: 894px;
 
-.modal_post_section{
+  }
 
-   position: relative;
-  /*width: 50vw; */
+}
+
+/* 가장 작은 사이즈 */
+@media screen and (max-width:720px),
+(max-height:570px) {
+  .modal_post_section {
+    width: 348px;
+    height: 390px;
+  }
+}
+
+.modal_post_section {
+  position: relative;
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 
-  width:60vw;
-  min-width: 388px;
-  min-height: 431px;
-  max-width: 795px;
-  max-height: 838px;
-
-  border-radius:10px;
+  border-radius: 10px;
   /* overflow:scroll; */
 
-  margin:auto;
-  box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
+  margin: auto;
+  box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, .3);
 }
 
-.modal_post_section::before{
+.modal_post_section::before {
   content: "";
   display: block;
-  padding-top: 110%;
+  padding-top: 114%;
 }
-.new-post-background{
+
+.new-post-background {
   position: absolute;
-  top:0; left:0; bottom:0; right:0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
   border-radius: 10px;
   overflow: hidden;
 
   background-color: white;
-  box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
+  box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, .3);
 
 }
 
 
 /* ----- 게시물작성 top ------ */
-
-.new-post-top-section{
+.new-post-top-section {
   width: 100%;
-  height: 8%;
+  height: 50px;
 }
-.new-post-top{
+
+.new-post-top {
   display: flex;
   /* justify-content: space-between; */
   justify-content: center;
@@ -92,14 +118,16 @@
   border-bottom: 2px solid #ececec;
 
 }
-.new-post-top-title{
+
+.new-post-top-title {
   /* flex-grow: 1; */
   justify-content: center;
-  
+
   font-size: 18px;
 }
+
 /* ----- 게시물작성 bottom ------ */
-.new-post-bottom-section{
+.new-post-bottom-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,44 +135,53 @@
   height: 92%;
 }
 
-  .new-post-file-input-box{
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* top:0; left:0; bottom:0; right:0; */
-    
-  }
-  /* .new-post-file-img > i{ */
-    /* transform:scale(4) ; */
-    /* margin-bottom: 30px; */
-  /* } */
-.input-message{
-    font-size: 23px;
-    text-align: center;
-    font-weight: 300;
-    margin: 10px 0;
-  
-  
-  }
-  #file-input{display: none;}
-.file-select-btn > label{
+.new-post-file-input-box {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* top:0; left:0; bottom:0; right:0; */
+
+}
+
+/* .new-post-file-img > i{ */
+/* transform:scale(4) ; */
+/* margin-bottom: 30px; */
+/* } */
+.input-message {
+  /* width: 300px; */
+  height: 52px;
+  font-size: 24px;
+  text-align: center;
+
+  padding: 0 7px;
+  margin: 20px 0;
+
+
+}
+
+#file-input {
+  display: none;
+}
+
+.file-select-btn>label {
   cursor: pointer;
 }
-  .file-select-btn{
-    width: 122.81px;
-    height: 30.98px;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 4px;
-    background-color: var(--fiesta-color);
-    margin-top: 12px ;
 
-    
-    color: white;
-    font-size: 15px;    
-    text-align: center;
-  }
+.file-select-btn {
+  width: 122px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--fiesta-color);
+  margin-top: 12px;
+
+
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
