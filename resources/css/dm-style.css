@@ -95,19 +95,45 @@ body {
     color :white
 }
 
-.down .chat .pro-img{
-width: 30px;
-height: 30px;
+.chat{
+    display: flex;
+    padding : 8px 20px;
+
 }
 
-.down .chat > span{
+.down .chat .pro-img{
+width: 56px;
+height: 56px;
+margin: 10px;
+}
+
+.chat-content-right > span{
     font-size: 1em;
     font-weight: 500;
+    display: block;
+    margin: 10px;
 }
 
 .down .chat > .chat-content{
-    display: c;
+    display: flex;
+    flex-direction: column;
 }
+.chat-content2{
+    display: inline;
+    margin-left: 5px;
+    font-size: 0.9em;
+    color: #8e8e8e;
+}
+
+.chat-time{
+    display: inline-block;
+    margin-left:5px;
+    font-size: 0.9em;
+    color:#8e8e8e;
+}
+
+
+
 
 @media screen and (max-width: 470px) {
 
