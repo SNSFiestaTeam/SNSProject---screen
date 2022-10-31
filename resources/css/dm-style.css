@@ -157,5 +157,14 @@ margin: 10px;
 
 
 @media screen and (min-width: 471px) and (max-width: 1023px) {
-      }
+
+.container{
+    width: 100vw;
+}
+
+.left{
+    min-width: 330px;
+}
+
+
 }
