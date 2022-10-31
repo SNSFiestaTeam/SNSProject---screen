@@ -52,21 +52,21 @@
   margin: auto;
   box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, .3);
 
-  width: 99%;
-  height: 70%;
+  width: 60%;
+  height: 37vw;
     min-width: 721px;
-    min-height: 391px;
+    min-height: 398px;
     max-width: 1220px;
-    max-height: 390px;
+    max-height: 895.45px;
 
     /* overflow: scroll; */
 }
-/* 
+
 .modal_post_section::before {
   content: "";
   display: block;
-  padding-top: 114%;
-} */
+  padding-top: 160%;
+}
 
 .new-post-background {
   position: absolute;
