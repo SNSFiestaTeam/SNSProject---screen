@@ -16,16 +16,13 @@
   box-sizing: 0;
   text-decoration: none;
   list-style: none;
+
+  /* border: 1px solid black; */
 }
 
 body {
   width: 100vw;
   height: 100vh;
-}
-
-
-a{
-  color:black;
 }
 
 
@@ -43,6 +40,7 @@ a{
   /* display: none; */
 }
 
+
 .feed-menu {
   width: 350px;
   /* height: 250px; */
@@ -53,6 +51,7 @@ a{
   flex-direction: column;
   align-items: center;
 }
+
 
 /* 공유하기 */
 .share-title {
@@ -74,6 +73,7 @@ a{
 }
 
 
+
 .share-content {
   margin: 10px 0;
   flex-basis: 70%;
@@ -90,7 +90,6 @@ a{
 .share-content div {
   width: 88%;
   padding: 13px 20px;
-
 }
 
 
@@ -99,16 +98,31 @@ a{
 }
 
 
-
-
-
-.share-content i {
-  margin-right: 10px;
+.share-content a{
+  color: black;
+  width: 100%;
+  
+  display: flex;
+  justify-content: flex-start;
 }
 
-.share-content a {
+
+.icon-area{
+  width: 30px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.text-area{
+  width: 100px;
+  margin-left: 10px;
   font-size: 0.9em;
-  font-weight: bold;
+  font-weight: 600;
+
 }
 
 
