@@ -44,26 +44,26 @@ a{
 }
 
 .feed-menu {
-  width: 500px;
-  height: 350px;
+  width: 350px;
+  /* height: 250px; */
   background-color: white;
 
   border-radius: 7px;
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 
+/* 공유하기 */
 .share-title {
   width: 100%;
-  flex-basis: 20%;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  /* border: 1px solid black; */
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 
@@ -75,21 +75,37 @@ a{
 
 
 .share-content {
+  margin: 10px 0;
   flex-basis: 70%;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-  border-bottom: 1px solid #ddd;
+  justify-content: flex-start;
+  align-items: flex-start;
   
-  /* border: 1px solid blue; */
 }
 
 
 .share-content div {
-  margin: 10px;
+  width: 88%;
+  padding: 13px 20px;
+
+  display: flex;
 }
+
+
+.share-content div:hover {
+  background-color: rgba(221, 221, 221, 0.3);
+}
+
+
+.share-content div > span:first-child{
+  flex-basis: 10%;
+  /* border: 1px solid black; */
+
+}
+
 
 .share-content i {
   margin-right: 10px;
@@ -100,62 +116,6 @@ a{
   font-weight: bold;
 }
 
-/* .share-content div {} */
-/* 
-.share-content-icon, .share-content-text {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: space-between;
-  border: 1px solid blue;
-} */
 
 
-/* .share-container span {
-  margin: 15px;
-  border: 1px solid black;
-}
 
-
-#declaration-textarea {
-  box-sizing: border-box;
-  margin-top: 10px;
-  width: 100%;
-  height: 200px;
-  resize: none;
-  outline: none;
-
-  padding: 5px;
-
-  border: 1px solid #828282;
-} */
-
-.feed-menu-btn {
-  width: 100%;
-
-  flex-basis: 15%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.feed-menu-btn > a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  color: black;
-  font-size: 14px;
-}
-
-.btn1 > span {
-  color: orangered;
-  font-weight: bold;
-}
-
-.btn2 > a {
-  border-bottom: 1px solid #ddd;
-}
