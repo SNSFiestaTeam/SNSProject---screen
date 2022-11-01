@@ -91,7 +91,6 @@ a{
   width: 88%;
   padding: 13px 20px;
 
-  display: flex;
 }
 
 
@@ -100,11 +99,7 @@ a{
 }
 
 
-.share-content div > span:first-child{
-  flex-basis: 10%;
-  /* border: 1px solid black; */
 
-}
 
 
 .share-content i {
