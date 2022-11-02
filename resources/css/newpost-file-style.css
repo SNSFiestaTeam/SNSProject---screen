@@ -79,6 +79,8 @@
 
   margin: auto;
   box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, .3);
+
+  /* transition-delay: 10s; */
 }
 
 .modal_post_section::before {
