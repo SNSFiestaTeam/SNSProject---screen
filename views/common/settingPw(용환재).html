@@ -100,25 +100,25 @@
                     </aside> 
                     <h1 class="loginid">로그인아이디</h1>
                 </div>
-              <form action="#">
+              <form action="#" id="changePwForm">
                 <div class="pre-pw">
                     <aside class="menu-left">
                         이전 비밀번호
                     </aside>
-                    <input type="password">
+                    <input type="password" id="currentPw">
                 </div>
                 <div class="new-pw">
                     <aside class="menu-left">
                         새 비밀번호
                     </aside>
-                     <input type="password" name="" id="">
+                     <input type="password" id="newPw">
                 </div>
 
                 <div class="new-pw2">
                     <aside class="menu-left">
                         새 비밀번호 확인
                     </aside>
-                    <input type="password">
+                    <input type="password" id="newPwConfirm">
                 </div>
                 <div class="ch-btn">
                     <aside class="menu-left">
@@ -153,5 +153,6 @@
     </footer>
 
 
+    <script src="/resources/js/settingPw.js"></script>
   </body>
 </html>
