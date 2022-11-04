@@ -41,7 +41,6 @@ body {
 
 button {
   border: none;
-  background-color: white;
 }
 
 footer {
@@ -82,9 +81,6 @@ header > section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo-section {
 }
 
 .logo-section a {
